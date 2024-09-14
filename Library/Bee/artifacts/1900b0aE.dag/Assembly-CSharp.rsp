@@ -354,6 +354,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.46f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/scripts/enemy_movement.cs"
 "Assets/scripts/player_movement.cs"
+"Assets/scripts/TerrainBoxScript.cs"
 -langversion:9.0
 /deterministic
 /optimize+
