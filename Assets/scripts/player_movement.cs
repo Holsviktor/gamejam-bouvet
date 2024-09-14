@@ -44,7 +44,7 @@ public class player_movement : MonoBehaviour
             xVelocity -= acceleration;
         }
 
-        rb.addForce(transform)
+        //rb.addForce(transform)
 
     }
 }
