@@ -5,23 +5,19 @@ using UnityEngine;
 public class enemy_movement : MonoBehaviour
 {
     // Start is called before the first frame update
- 	public float speed = 5f;
+ 	public float speed = 20f;
 	public float minDist = 1f;
-	public Transform target;
+	private Transform target;
+    private GameObject player;
 
 	// Use this for initialization
 	void Start() 
 	{
-		// if no target specified, assume the player
-		if (target == null) {
-
-            //target = GameObject.FindWithTag("Player").GetComponent<Transform>();
-
-			if (GameObject.FindWithTag("Player") != null)
-			{
-				target = GameObject.FindWithTag("Player").GetComponent<Transform>();
-			}
-		}
+        player = GameObject.Find("Player");
+        if (player != null)
+        {
+            target = player.GetComponent<Transform>();
+        }
 	}
 	
 	// Update is called once per frame
