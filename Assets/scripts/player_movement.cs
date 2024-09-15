@@ -26,8 +26,6 @@ public class player_movement : MonoBehaviour
             GetComponent<Rigidbody>().position = 0.99;
         } */
          // Sjekk input
-        /* var floorTransform = floor.GetComponent<Transform>();
-        float floorDistance = Vector3.Distance(transform.position, floor.transform.position); */
         if (transform.position.x > 50) {
             transform.position = new Vector3(50, transform.position.y, transform.position.z);
         }
